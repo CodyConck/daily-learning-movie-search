@@ -1,4 +1,16 @@
 import React, { useState } from "react";
+import Button from "@material-ui/core/Button";
+import SearchIcon from "@material-ui/icons/Search";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  root: {
+    background: "linear-gradient(45deg, #0000FF, #ABD7EC)",
+    marginLeft: "1rem",
+    color: "white",
+  },
+});
 
 const Search = (props) => {
   const [searchValue, setSearchValue] = useState("");
@@ -16,14 +28,31 @@ const Search = (props) => {
     props.search(searchValue);
     resetInputField();
   };
+  function ButtonStyled() {
+    const classes = useStyles();
+    return (
+      <Button
+        endIcon={<SearchIcon />}
+        onClick={callSearchFunction}
+        className={classes.root}
+      >
+        Search
+      </Button>
+    );
+  }
   return (
     <form className="search" action="">
-      <input
+      <TextField
+        variant="outlined"
+        size="small"
         value={searchValue}
         onChange={handleSearchInputChanges}
         type="text"
+        placeholder="Enter Movie Title"
       />
-      <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+      <ButtonStyled variant="contained" type="submit">
+        Search
+      </ButtonStyled>
     </form>
   );
 };

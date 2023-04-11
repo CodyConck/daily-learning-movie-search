@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(45deg, #0000ff, #abd7ec);
   height: 70px;
   display: flex;
   flex-direction: column;
@@ -68,8 +68,8 @@
   justify-content: center;
   margin-top: 10px;
 }
-
-input[type="submit"] {
+/* removed below styles in lieu of MUI styling */
+/* input[type="submit"] {
   padding: 5px;
   background-color: transparent;
   color: black;
@@ -77,12 +77,12 @@ input[type="submit"] {
   width: 80px;
   margin-left: 5px;
   cursor: pointer;
-}
+} */
 
-input[type="submit"]:hover {
+/* input[type="submit"]:hover {
   background-color: #282c34;
   color: antiquewhite;
-}
+} */
 
 .search > input[type="text"] {
   width: 40%;
