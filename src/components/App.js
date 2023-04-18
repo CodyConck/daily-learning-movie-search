@@ -5,8 +5,8 @@ import Movie from "./Movie";
 import Search from "./Search";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-
 import "@fontsource/roboto";
+// import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 const MOVIE_API_URL = "https://www.omdbapi.com/?s=man&apikey=9c901ace";
 

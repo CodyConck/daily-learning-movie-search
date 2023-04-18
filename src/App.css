@@ -5,15 +5,19 @@
 
 .App-header {
   background: linear-gradient(45deg, #0000ff, #abd7ec);
-  height: 70px;
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: inherit;
+  justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
   cursor: pointer;
+}
+
+.switch {
+  display: flex;
+  margin-top: 0.5rem;
 }
 
 .spinner {
@@ -87,6 +91,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+  padding: 5px;
 }
 /* removed below styles in lieu of MUI styling */
 /* input[type="submit"] {

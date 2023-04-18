@@ -4,7 +4,7 @@ import Paper from "@material-ui/core/Paper";
 
 // in case there is no image for the movie
 const DEFAULT_PLACEHOLDER_IMAGE =
-  "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg";
+  "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg";
 
 const Movie = ({ movie }) => {
   const poster =
@@ -13,7 +13,7 @@ const Movie = ({ movie }) => {
   return (
     <Grid container className="movie">
       <Grid item>
-        <Paper className="movie-info" style={{ color: "aliceblue" }}>
+        <Paper className="movie-info" style={{ color: "black" }}>
           <h2>{movie.Title}</h2>
           <img
             width="200"
