@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-top: 83px;
+  margin-top: 85px;
 }
 
 .App-header {
@@ -10,9 +10,12 @@
   flex-direction: inherit;
   justify-content: space-evenly;
   font-size: calc(10px + 2vmin);
-  color: white;
   padding: 20px;
   cursor: pointer;
+}
+
+.App-header h2 {
+  color: black;
 }
 
 .switch {
