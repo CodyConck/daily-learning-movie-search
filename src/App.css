@@ -1,14 +1,14 @@
 .App {
   text-align: center;
-  margin-top: 85px;
+  margin-top: 90px;
 }
 
 .App-header {
   background: linear-gradient(45deg, #0000ff, #abd7ec);
   height: 80px;
-  display: flex;
-  flex-direction: inherit;
-  justify-content: space-evenly;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   padding: 20px;
   cursor: pointer;
